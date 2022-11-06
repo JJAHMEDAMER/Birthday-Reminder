@@ -9,7 +9,7 @@ import Button from "./comp/button";
 const App = () => {
   const [bDayData, setBDayData] = React.useState(data);
   const CardList = bDayData.map((item) => <Card {...item} />);
-  const num = bDayData.length;
+  let num = bDayData.length;
 
   function viewAllButton() {
     setBDayData([]);
