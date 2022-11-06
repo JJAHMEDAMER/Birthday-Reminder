@@ -2,7 +2,7 @@ import React from "react";
 
 const Button = () => (
   <div>
-    <button>View All</button>
+    <button className="button">View All</button>
   </div>
 );
 
