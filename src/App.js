@@ -6,14 +6,23 @@ import data from "./data";
 import Card from "./comp/card";
 import Button from "./comp/button";
 
-const CardList = data.map((item) => <Card {...item} />);
+const App = () => {
+  const [bDayData, setBDayData] = React.useState(data);
+  const CardList = bDayData.map((item) => <Card {...item} />);
+  const num = bDayData.length;
 
-const App = () => (
-  <div className="app">
-    <h1 className="app--header">{data.length} Birthdays Today</h1>
-    {CardList}
-    <Button />
-  </div>
-);
+  function viewAllButton() {
+    setBDayData([]);
+    num = 0;
+  }
+
+  return (
+    <div className="app">
+      <h1 className="app--header">{num} Birthdays Today</h1>
+      {CardList}
+      <Button onClickHandler={viewAllButton} />
+    </div>
+  );
+};
 
 export default App;

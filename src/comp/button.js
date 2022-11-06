@@ -1,8 +1,10 @@
 import React from "react";
 
-const Button = () => (
+const Button = (props) => (
   <div>
-    <button className="button">View All</button>
+    <button className="button" onClick={props.onClickHandler}>
+      Clear All
+    </button>
   </div>
 );
 
