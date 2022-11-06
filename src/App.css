@@ -18,12 +18,14 @@
 }
 
 body {
+    height: 100vh;
     color: var(--black);
     background-color: var(--pink);
     font-family: "Karla";
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 
