@@ -2,7 +2,7 @@
     --pink: #F28AB2;
     --black: #333638;
     --light-pink: #F1E6EA;
-    --white: #FFFFFF; 
+    --white: #FFFFFF;
     --pink-dark: #6f0837;
 
 }
@@ -15,19 +15,21 @@
 }
 
 body {
+    color: var(--black);
     background-color: var(--pink);
+    display: flex;
+
 }
 
-.app{
+.app {
     width: 400px;
-    height: 500px;
     background-color: #F1E6EA;
     padding: 35px;
-
+    border-radius: 9px;
 }
 
-.button{
-    width:100%;
+.button {
+    width: 100%;
     height: 70px;
     border-radius: 9px;
     border-width: 0;
@@ -35,4 +37,27 @@ body {
     background-color: var(--pink);
     color: var(--white);
     font-size: 21px;
+}
+
+.card {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card--image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card--name {
+    font-size: 25px;
+}
+
+.card--age {
+    font-size: 18px;
+
 }
