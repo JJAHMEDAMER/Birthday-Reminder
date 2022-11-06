@@ -10,6 +10,7 @@ const CardList = data.map((item) => <Card {...item} />);
 
 const App = () => (
   <div className="app">
+    <h1 className="app--header">{data.length} Birthdays Today</h1>
     {CardList}
     <Button />
   </div>
